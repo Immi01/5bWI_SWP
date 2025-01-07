@@ -1,8 +1,8 @@
 package at.eim.algodat.sort;
 
-public class SortAlgorithm {
+public class SortAlgorithm implements Sorter {
 
-    public static int[] sort(int[] data) {
+    public int[] sort(int[] data) {
         boolean changed = true;
 
         while (changed) {
@@ -18,6 +18,10 @@ public class SortAlgorithm {
         }
 
         return data;
+    }
+
+    public String getName() {
+        return "Sort Algorithm";
     }
 
 }

@@ -13,7 +13,8 @@ public class App {
         System.out.println();
 
         int[] toSort = {7,4,3,1,2,1};
-        DataGenerator.printArray(SortAlgorithm.sort(toSort));
+        SortAlgorithm sorter = new SortAlgorithm();
+        DataGenerator.printArray(sorter.sort(toSort));
 
     }
 }
