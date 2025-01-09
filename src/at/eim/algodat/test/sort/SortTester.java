@@ -28,5 +28,9 @@ public class SortTester {
             //Random Tests:
             Assertions.assertArrayEquals(sortedRndData, s.sort(rndData.clone()), "SORTER: " + s.getName());
         }
+        BogoSort bogoSort = new BogoSort();
+        int[] bogoData = {5,4,7,/*8,9,2,3,20,50,30,23*/};
+        int[] sortedBogo = {/*2,3,*/4,5,7/*,8,9,20,23,30,50*/};
+        Assertions.assertArrayEquals(sortedBogo, bogoSort.sort(bogoData));
     }
 }
